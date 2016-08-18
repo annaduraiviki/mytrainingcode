@@ -1,0 +1,60 @@
+<openerp>
+<data>
+	<record model="ir.ui.view" id="token_list">
+		<field name="name">token list</field>
+		<field name="model">token.vechicle</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="id" />
+				<field name="customer_id" />
+				<field name="reserve_token" />
+				<field name="date_display"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="token_form_views">
+	<field name="name">token form</field>
+	<field name="model">token.vechicle</field>
+	<field name="arch" type="xml">
+		<form string="Token management">
+		<sheet>
+		<group colspan="4" col ="4">
+		<separator string=" CAR TOKEN DETAILS" col="2" colspan="6"/> 
+				<field name="id" />
+				<field name="customer_id" />
+				<field name="reserve_token" widget="handle"/>
+				<field name="seq_numb"/>
+				<field name="date_display"/>
+				<field name="quantity"/>
+				<field name="quantity_no"/>
+				<field name="deduction"/>
+				<field name="samp_cal1"/>
+				<field name="samp_cal2"/>
+				<field name="samp_cal3"/>
+			
+		</group>
+		
+		</sheet>		
+		</form>
+	</field>
+	</record>	
+	 <record id="seq_autogeneratefirst123" model="ir.sequence">
+           <field name="name">Auto</field>
+           <field name="code">token.vechicle</field>
+           <field name="prefix">Token</field>
+           <field name="padding">4</field>
+       </record>
+	
+	<record model="ir.actions.act_window" id="token_action_window">
+			<field name="name">tokenmanagement</field>
+			<field name="res_model">token.vechicle</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_type">form</field>
+			<field name="usage">menu</field>
+	</record>
+	
+		<menuitem name="Token management" id="token_management1" parent="company_manage" action="token_action_window" />
+	
+	</data>
+</openerp>

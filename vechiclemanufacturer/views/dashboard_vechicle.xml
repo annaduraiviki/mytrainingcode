@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<odoo>
+
+	<!-- <record id="dashboard_car_action" model="ir.actions.act_window">
+		<field name="name">Dashboard Customer</field>
+		<field name="res_model">customer.car</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">calendar</field>
+		<field name="view_id"
+			ref="vechiclemanufacturer.customer_details_calendar_view" />
+	</record> -->
+	<!-- <record id="dashboard_company_action" model="ir.actions.act_window"> 
+		<field name="name">Dashboard Company</field> <field name="res_model">comapany.car</field> 
+		<field name="view_type">form</field> <field name="view_mode">tree</field> 
+		<field name="view_id" ref="vechiclemanufacturer.companymanagement_list" /> 
+		</record> -->
+
+	<record id="dashboard_car" model="ir.ui.view">
+		<field name="name">dashboard carmanufacturer</field>
+		<field name="model">board.board</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Dashboard">
+				<board style="1-1">
+					<column>
+						<action name="%(customer_action_window)d" height="50" width="210"
+							string="Customer Dashboard" view_mode="list"/>
+							<action name="%(company_action_window)d" height="150"
+							width="510" string="Company Dashboard" />
+					</column>
+					<column>						
+						<action name="%(customer_action_window)d" height="50"
+							width="210" string="Calendar"  view_mode="calendar"/>
+						<action name="%(productshow_action_window)d" height="150"
+							width="210" string="Product Dashboard" />	
+					</column>					
+				</board>
+			</form>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="customer_details_search_view_dashboard">
+		<field name="name">customer_details_search_dashboard</field>
+		<field name="model">productselection.car</field>
+		<field name="type">search</field>
+		<field name="arch" type="xml">
+			<search string="Product Dashboard">
+								
+				<field name="image" align="center" height="90" width="90" widget="image" nolabel="1" />
+				<field name="product_nameselection" style="width:50%%;height:10%%;font-size:15px"
+									placeholder="Specify Product name" context="{'default_group_by':'product_nameselection'}" />
+				<field name="id" />
+				<field name="quantity_total" domain="[('quantity_total','&lt;',4)]"  />
+			</search>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="dashboard_action">
+		<field name="name">Customer Dashboard</field>
+		<field name="res_model">board.board</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">form</field>
+		<field name="usage">menu</field>
+		<field name="view_id" ref="dashboard_car" />
+	</record>
+
+	<menuitem action="dashboard_action" id="dashboard_analysiss"
+		name="DASHBOARD-VMS" parent="ProductioID_menu" sequence="4" icon="terp-graph" />
+
+</odoo>

@@ -1,0 +1,88 @@
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="companymanagement_list">
+			<field name="name">companymanagement list</field>
+			<field name="model">comapany.car</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="id" />
+					<field name="admin_name" />
+					<field name="serviceman_nameinadmin" string="Serviceman name" filter_domain="[('serviceman_nameinadmin','ilike',self)]"/>
+					<field name="cust_id" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="company_form_views">
+			<field name="name">carparts form</field>
+			<field name="model">comapany.car</field>
+			<field name="arch" type="xml">
+				<form string="company management">
+					<sheet>
+						<sheet>
+								<group string="COMPANY MANAGEMENT FORM" colspan="4" col="2">
+								<!-- <field name="id" /> -->
+								<field name="admin_name" />
+								<!-- <field name="serviceman_name" /> <field name="service_cost"/> -->
+								<field name="id" />
+								<field name="admin_phonenumber" />
+								<!-- <field name="admin_access" /> -->
+								<field name="serviceman_nameinadmin" width="100" />
+								<field name="service_cost" widget="statinfo" />
+							</group>
+							<group colspan="2" col="2">
+
+								<field name="cust_id" label="Customer id" style="width:20%%"
+									attrs="{'invisible':[('serviceman_nameinadmin','=',False)]}" />
+							</group>
+							<group colspan="4" col="4">
+								<field name="from_date" />
+								<field name="final_date" />
+								<!-- <field name="total_days" widget="statinfo" class="oe_inline 
+									oe_stat_button" icon="fa-empire"/> -->
+							</group>
+							<button name="total_days" type="action"
+								class="oe_inline oe_right oe_stat_button" icon="fa-empire">
+								<field name="total_days" widget='statinfo' />
+
+							</button>
+
+						</sheet>
+						<div class="oe_chatter">
+							<field name="follwers_id" widget="mail_followers" />
+							<field name="followers_msg" widget="mail_thread" />
+						</div>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="company_details_search_view">
+			<field name="name">companymanage_details_search</field>
+			<field name="model">comapany.car</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="company_details">
+					<!-- <filter string="Below 2000" icon="terp-personal" domain="[('total_cost','>',2000)]" />
+					<filter string="Current Status" context="{'group_by':'statusbar'}"/> -->
+					<field name="serviceman_nameinadmin" string="Serviceman name" filter_domain="[('serviceman_nameinadmin','ilike',self)]"/>
+					
+				</search>
+			</field>
+		</record>
+		
+		<record model="ir.actions.act_window" id="company_action_window">
+			<field name="name">companymanagement</field>
+			<field name="res_model">comapany.car</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_type">form</field>
+			<field name="usage">menu</field>
+		</record>
+
+		<menuitem name="COMPANY MANAGEMENT" id="company_manage"
+			parent="ProductioID_menu" />
+		<menuitem name="Company management" id="company_parts1"
+			parent="company_manage" action="company_action_window" />
+
+	</data>
+</openerp>

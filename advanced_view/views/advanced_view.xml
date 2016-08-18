@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="personal_details_gantt_view">
+			<field name="name">personal_details.gantt</field>
+			<field name="model">personal.details</field>
+			<field name="type">gantt</field>
+			<field name="arch" type="xml">
+				<gantt string="Personal Details" date_delay="age" date_start="start_date" date_stop="end_date">
+					<field name="name" />
+					<field name="age" />
+					<field name="start_date"/>
+					<field name="end_date"/>
+					<field name="gender" />
+					<field name="address" />
+					<field name="email" />
+					<field name="contact" />
+				</gantt>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="personal_details_form_view">
+			<field name="name">personal_details.form</field>
+			<field name="model">personal.details</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Personal details" version="7.0">
+				<group string="Personal details" style="width: 40%%">
+					<field name="name" />
+					<field name="age" />
+					<field name="start_date" />
+					<field name="end_date" />
+					<field name="gender" />
+					<field name="address" />
+					<field name="email" />
+					<field name="contact" />
+					</group>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="personal_details_tree_view">
+			<field name="name">personal_details.form</field>
+			<field name="model">personal.details</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="details">
+					<field name="name" />
+					<field name="age" />
+					<field name="start_date" />
+					<field name="end_date" />
+					<field name="gender" />
+					<field name="address" />
+					<field name="email" />
+					<field name="contact" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="personal_details_calendar_view">
+			<field name="name">personal_details.calendar</field>
+			<field name="model">personal.details</field>
+			<field name="type">calendar</field>
+			<field name="arch" type="xml">
+				<calendar day_length="1" color="name" date_start="start_date" date_stop="end_date"
+					string="personal_details">
+					<field name="name" />
+					<field name="age" />
+					<field name="start_date" />
+					<field name="end_date" />
+					<field name="gender" />
+					<field name="address" />
+					<field name="email" />
+					<field name="contact" />
+				</calendar>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="personal_details_search_view">
+			<field name="name">personal_details.calendar</field>
+			<field name="model">personal.details</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="personal_details">
+					<field name="name" />
+					<filter string="Valid" icon="terp-personal" domain="[('age','>',25)]" />
+					<field name="age" />
+					<field name="start_date" />
+					<field name="end_date" />
+					<field name="gender" />
+					<field name="address" />
+					<field name="email" />
+					<field name="contact" />
+					<filter string="Gender" context="{'group_by':'gender'}"/>
+				</search>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="personal_details_graph_view">
+			<field name="name">personal_details.form</field>
+			<field name="model">personal.details</field>
+			<field name="type">graph</field>
+			<field name="arch" type="xml">
+				<graph string="details">
+					<field name="name" />
+					<field name="age" />
+					<field name="start_date" />
+					<field name="end_date" />
+					<field name="gender" />
+					<field name="address" />
+					<field name="email" />
+					<field name="contact" />
+				</graph>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="personal_details_kanban_view">
+			<field name="name">personal_details.form</field>
+			<field name="model">personal.details</field>
+			<field name="type">kanban</field>
+			<field name="arch" type="xml">
+				<kanban quick_create="false" create="true">
+					<field name="name" />
+					<templates>
+						<t t-name="kanban-box">
+							<div class="oe_module_vignette">
+								<t t-set="installed" />
+								<img t-att-src='_s + "/base/static/src/img/avatar.png"'
+									class="oe_kanban_image" />
+								<div class="oe_module_desc">
+									<h4>
+										<a type="open">
+											<field name="name" />
+										</a>
+									</h4>
+								</div>
+							</div>
+						</t>
+					</templates>
+				</kanban>
+			</field>
+		</record>
+
+
+		<record model="ir.actions.act_window" id="action_personal_details_gantt">
+			<field name="name">personal_details</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">kanban,form,tree,gantt,calendar,graph</field>
+			<field name="res_model">personal.details</field>
+		</record>
+
+
+		<menuitem name="Advanced views" icon="terp-project" id="personal_detailsParent_menu" />
+		<menuitem name="Parent View" parent="personal_detailsParent_menu"
+			id="NotesChild_menu" />
+		<menuitem name="Child View" parent="NotesChild_menu"
+			id="Header_menu_mainform" action="action_personal_details_gantt" />
+	</data>
+</openerp>

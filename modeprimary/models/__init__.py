@@ -1,0 +1,1 @@
+from . import view1,view2

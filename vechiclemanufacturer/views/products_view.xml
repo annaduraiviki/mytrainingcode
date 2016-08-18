@@ -1,0 +1,68 @@
+<openerp>
+<data>
+	<record model="ir.ui.view" id="product_list">
+		<field name="name">product list</field>
+		<field name="model">products.car</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="id" />
+				<field name="customer_id"/>
+				<field name="product_name" />
+				<field name="qty" widget="handle"/>
+				<field name="quantity_total"/>
+				<field name="country_base" />
+				<field name="area_base"/> 
+			</tree>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="product_form_views">
+	<field name="name">products form</field>
+	<field name="model">products.car</field>
+	<field name="arch" type="xml">
+		<form string="product management">
+				<header>
+		<button string="New" type="object" name="new_func"
+							attrs="{'invisible': [('status', '=', 'new')]}" icon="fa-plus" />
+
+						<button string="Draft" type="object" name="draft_func"
+							class="oe_highlight o_wow" attrs="{'invisible': [('status','!=','draft')]}"
+							icon="fa-undo" />
+						<button string="Cancel" type="object" name="cancel_func"
+							class="oe_highlight o_wow" attrs="{'invisible': [('status','=','cancel')]}" />
+						<button string="confirm" type="object" name="confirm_func"
+							attrs="{'invisible': [('status','=','confirm')]}" icon="fa-check-square-o" />
+						<button string="done" type="object" name="done_func"
+							attrs="{'invisible': [('status','=','done')]}" icon="fa-bullhorn" />
+
+						<field name="status" widget="statusbar" class="oe_rigth" />
+				</header>
+		<sheet>
+		 
+		<group colspan="4" col ="4">
+		<separator string=" Product DETAILS" col="2" colspan="6"/> 
+				<field name="id" />
+				<field name="customer_id"/>
+				<field name="product_name" />
+				<field name="qty" widget="handle"/>
+				<field name="image" widget="image" label="0" align="left" />
+				<field name="quantity_total" readonly="1"/>
+				<field name="state_custom" />
+				<field name="country_base" />
+				<field name="area_base"/> 
+			</group>
+		</sheet>		
+		</form>
+	</field>
+	</record>	
+	 	
+	<record model="ir.actions.act_window" id="product_action_window">
+			<field name="name">productmanagement</field>
+			<field name="res_model">products.car</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_type">form</field>
+			<field name="usage">menu</field>
+	</record>
+	<menuitem name="Product-Quotation" id="product_management1" parent="company_manage" action="product_action_window" />
+	</data>
+</openerp>

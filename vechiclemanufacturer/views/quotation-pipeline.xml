@@ -1,0 +1,99 @@
+<odoo>
+
+
+	<record model="ir.ui.view" id="My_kanban_Product_pipelines">
+		<field name="name">Kanban_Pipeline_product</field>
+		<field name="model">products.car</field>
+		<field name="arch" type="xml">
+			<kanban default_group_by="status" class="o_kanban_small_column" quick_create="true" default_order="customer_id">
+				<field name="product_name" />
+				<field name="customer_id" />
+				<field name="qty" />
+				<field name="status" />
+				<templates>
+					<t t-name="kanban-box">
+						<div class="oe_kanban_vignette oe_semantic_html_override">
+							<table>
+								<tr>
+									<td>
+										<a type="open">
+											<li>
+												Product Name:
+												<strong>
+													<field name="product_name" />
+												</strong>
+											</li>
+											<img height="80" width="80"
+												t-att-src="kanban_image('products.car', 'image', record.id.value)"
+												class="oe_kanban_image" />
+										</a>
+									</td>
+
+									<div class="oe_kanban_details">
+										<h4>
+											<td>
+												<a type="open" align="right">
+
+													<li>
+														Quantity:
+														<field name="qty" />
+													</li>
+
+													<li>
+														CustomerID:
+														<field name="customer_id" />
+													</li>
+													<li>
+														Status:
+														<field name="status" />
+													</li>
+												</a>
+											</td>
+										</h4>
+										<div name="tags" />
+										<ul>
+
+										</ul>
+									</div>
+								</tr>
+							</table>
+						</div>
+
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="product_details_search_view_pipeline">
+		<field name="name">product_details_search_2</field>
+		<field name="model">products.car</field>
+		<field name="type">search</field>
+		<field name="arch" type="xml">
+			<search string="Product_details">
+				<field name="customer_id" string="By customer"  filter_domain="[ ('customer_id','ilike',self)]" />
+				<filter string="Below 10 Qty" icon="terp-personal"
+					domain="[('quantity_total','&lt;',10)]" />
+				<field name="product_name" />
+				<field name="status" />
+				<filter string="By Country" context="{'default_group_by':'country_base'}" />
+				<!-- <filter string="By Customer" context="{'group_by':'customer_id'}" /> -->
+
+				<filter string="Current Status" context="{'group_by':'status'}" />
+			</search>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="pipeline_Quotation">
+		<field name="name">customer_pipelines</field>
+		<field name="res_model">products.car</field>
+		<field name="view_mode">kanban</field>
+		<field name="view_type">form</field>
+		<field name="usage">menu</field>
+	</record>
+
+
+	<menuitem name="Quotation-Pipeline " id="Quotation_parts1_pipelines"
+		parent="customer_manage" action="pipeline_Quotation" />
+
+</odoo>

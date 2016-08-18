@@ -1,0 +1,10 @@
+<odoo>
+<report
+    id="action_supplier"
+    model="supplier.car"
+    string="Supplier Report"
+    report_type="qweb-pdf"
+    file="vechiclemanufacturer.report_supplier"
+    name="vechiclemanufacturer.report_supplier"
+ />
+</odoo>

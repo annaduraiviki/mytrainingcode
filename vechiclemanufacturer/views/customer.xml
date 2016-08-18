@@ -1,0 +1,365 @@
+<odoo>
+	<record model="ir.ui.view" id="customer_list">
+		<field name="name">customer list</field>
+		<field name="model">customer.car</field>
+		<field name="arch" type="xml">
+			<tree>  <!-- editable="top" -->
+				<field name="id" />
+				<field name="customer_name" />
+				<field name="car_model" />
+				<field name="car_regnumber" />
+				<field name="address" />
+				<field name="total_cost" readonly="1" />
+				<field name="regular_customer" />
+				<field name="priority" widget='priority' />
+				<field name="statusbar" />
+				<field name="percent_bar" widget="progressbar" />
+				<!-- <field name=""/> -->
+			</tree>
+		</field>
+	</record>
+
+
+
+
+	<record model="ir.ui.view" id="customer_form_views">
+		<field name="name">customer form</field>
+		<field name="model">customer.car</field>
+		<field name="arch" type="xml">
+			<form string="customer">
+
+				<header>
+					<button string="New" type="object" name="new_func"
+						attrs="{'invisible': [('statusbar', '=', 'new')]}" icon="fa-plus" />
+					<button string="Draft" type="object" name="draft_func"
+						class="oe_highlight o_wow" attrs="{'invisible': [('statusbar','!=','draft')]}"
+						icon="fa-undo" />
+					<button string="Cancel" type="object" name="cancel_func"
+						class="oe_highlight o_wow" attrs="{'invisible': [('statusbar','=','cancel')]}" />
+					<button string="confirm" type="object" name="confirm_func"
+						attrs="{'invisible': [('statusbar','=','confirm')]}" icon="fa-check-square-o" />
+					<button string="done" type="object" name="done_func"
+						attrs="{'invisible': [('statusbar','=','done')]}" icon="fa-bullhorn" />
+
+					<field name="statusbar" widget="statusbar" class="oe_right" />
+					<button string="wizard"
+						name="%(vechiclemanufacturer.launch_session_wizardss)d" type="action"
+						class="oe_highlight" icon="fa-puzzle-piece">
+						`
+						<i class="fa fa-cog fa-spin fa-2x fa-fw"></i>
+					</button>
+					<button string="wizard2" name="subscribe2" type="object"
+						class="oe_highlight" icon="fa-truck">`
+					</button>
+
+
+				</header>
+				<!-- <sheet> -->
+				<div name="button_box" position="inside">
+					<button name="_car_state_number" type="action"
+						class=" oe_highlight oe_left o_wow " attrs="{'invisible':[('car_reginfo','=',False)]}"> <!-- style="background-color:grey ;border-radius:10px" -->
+						<i class="fa fa-cog fa-spin fa-2x fa-fw"></i>
+						<field name="car_reginfo" style="font-size:15px" />
+						<!-- <label string=" " class=" oe_right fa fa-spinner fa-pulse fa-5x 
+							fa-fw"></label> -->
+					</button>
+				</div>
+
+				<sheet>
+					<button name="unlink" type="object" string="Delete" class="oe_highlight"
+						icon="fa-unlink" />
+					<button name="clear_priority" type="object" class="oe_highlight o_wow "
+						string="clear priority" icon="fa-th" />
+					<div
+						class="oe_button_box oe_subtotal_footer_separator oe_inline o_td_label"
+						name="button_box">
+						<button name="%(vechiclemanufacturer.supplier_action_window)d"
+							type="action" class=" oe_right o_wow oe_stat_button" icon="fa-inr"
+							context="{'search_default_cust_id': active_id}">
+							<field name="customer_tot_cost" widget="statinfo"></field>
+						</button>
+						<button name="_priority_but" type="action" class="oe_right oe_stat_button"
+							icon="fa-bolt">
+							<field name="priority_but" widget='statinfo' />
+
+						</button>
+					</div>
+
+					<group colspan="4" col="4">
+						<separator string="CUSTOMER GENERAL INFORMATION" style="width:center"
+							colspan="4" />
+						<field name="customer_name" class="oe_left"
+							style="width:60%%;height:5%%;font-size:15px" placeholder=" Please enter customer name here" />
+						<field name="id" style="font-size:15px" />
+						<field name="regular_customer" attrs="{'invisible':[('customer_name','=',False)]}" />
+						<field name="car_model" style="width:60%%" widget="selection" />
+						<field name="car_regstate" style="width:60%%" placeholder="Customer state" />
+						<field name="car_regnumber" style="width:60%%"
+							placeholder=" Customer vechicle register number" widget="color" />
+						<field name="sequence_number" class="oe_chatter"
+							attrs="{'invisible':[('car_reginfo','=',False)]}" readonly="0" />
+						<field name="percent_bar" widget="percentpie" />
+					</group>
+					<group colspan="4" col="4">
+						<field name="customer_avatar" widget='image' class="oe_left oe_avatar" />
+					</group>
+					<group colspan="2" col="2">
+						<field name="deadline_start_date" />
+						<field name="deadline_end_date" />
+					</group>
+					<notebook>
+						<page string="Customer details" icon="fa-eye">
+							<separator string="CUSTOMER PERSONAL INFORMATION"
+								colspan="2" />
+							<group col="4" colspan="4">
+								<field name="priority" label="Priorty to customer" widget='priority' />
+								<field name="cus_mobilenumb" style="width:70%%;height:10%%;font-size:15px"
+									placeholder="Specify Customer's mobile number" />
+								<field name="address" placeholder="customer's Address" />
+								<field name="mailaddress" style="width:60%%" widget="email"
+									placeholder="provide customer valid email Id" />
+							</group>
+						</page>
+						<page string="Service Management and servicer  ">
+							<group>
+								<field name="management" mode="tree" readonly="1">
+									<tree decoration-bf="total_days" decoration-info="total_days&lt;10"
+										decoration-danger="total_days&gt;11">
+										<field name="admin_name" />
+										<field name="serviceman_nameinadmin" />
+										<field name="total_days" />
+									</tree>
+								</field>
+							</group>
+						</page>
+						<page string="Customer Expenditures">
+							<group>
+								<group col="2" colspan="2" />
+								<field name="total_cost" readonly="1">
+									<tree decoration-it="supplier_name">
+										<field name="statusbar_custom" widget="statusbar" />
+										<field name="id" />
+										<field name="supplier_name" />
+										<field name="part_regnumber" />
+										<field name="parts_Name" />
+										<field name="date_purchased" widget="datetime" />
+										<field name="product_price" widget="payement" sum="Total Product price" />
+										<field name="product_quantity" />
+										<field name="product_tax" />
+										<field name="total_price" sum="Total values" nolabel="0"
+											class="oe_subtotal_footer" />
+									</tree>
+								</field>
+								<field name="amount_total" class="oe_right" />
+							</group>
+						</page>
+						<page string="Quotation">
+							<field name="product_quotation" widget="one2many_list"
+								context="{'search_default_customer_id':active_id}"> <!-- widget="one2many_list" context="{'search_customer_id':id}" -->
+								<tree editable="1">  <!-- editable="1" -->
+									<field name="id" />
+									<field name="customer_id" />
+									<field name="product_name" />
+									<field name="qty" />
+									<!-- <field name="image" widget="image" label="0" align="left" /> -->
+									<!-- <field name="quantity_total" readonly="1"/> -->
+								</tree>
+							</field>
+						</page>
+					</notebook>
+					<div class="oe_chatter">
+						<field name="review_customer" placeholder="Write review here.. "
+							nolabel="0"></field>
+						<!-- <field name="follow_id"/> <field name="follow_msg"/> -->
+					</div>
+				</sheet>
+				<!--</sheet> -->
+
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="My_kanban">
+		<field name="name">Kanban</field>
+		<field name="model">customer.car</field>
+		<field name="arch" type="xml">
+			<kanban default_group_by="statusbar" default_order="customer_name"
+				options="{&quot;group_by_tooltip&quot;: {&quot;requirements&quot;: &quot;Description&quot;, &quot;legend_priority&quot;: &quot;Use of stars&quot;}}">
+				<field name="customer_name" />
+				<field name="car_model" />
+				<field name="car_regnumber" />
+				<field name="address" />
+				<field name="total_cost" readonly="1" />
+				<field name="regular_customer" />
+				<field name="priority" widget='priority' />
+				<field name="statusbar" />
+				<field name="percent_bar" widget="progressbar" />
+				<field name="color" />
+				<!-- <field name="name"/> <field name="code"/> <field name="lst_price"/> -->
+				<templates>
+					<t t-name="kanban-box">
+						<div class="oe_kanban_vignette oe_semantic_html_override">
+							<div
+								t-attf-class="oe_kanban_color_#{kanban_getcolor(record.color.raw_value)} oe_kanban_card oe_kanban_global_click">
+								<table>
+									<tr>
+										<td>
+											<a type="open">
+												<li>
+													Customer Name:
+													<strong>
+														<field name="customer_name" />
+													</strong>
+												</li>
+												<img height="80" width="80"
+													t-att-src="kanban_image('customer.car', 'customer_avatar', record.id.value)"
+													class="oe_kanban_image" />
+											</a>
+										</td>
+
+										<div class="oe_dropdown_kanban">
+											<!-- dropdown menu -->
+											<div class="oe_dropdown_toggle">
+												<i class="fa fa-bars fa-lg" />
+												<ul class="oe_dropdown_menu">
+													<li>
+														<a type="delete">Delete</a>
+													</li>
+													<li>
+														<ul class="oe_kanban_colorpicker" data-field="color" />
+													</li>
+												</ul>
+											</div>
+											<div class="oe_clear"></div>
+										</div>
+
+										<div class="oe_kanban_details">
+											<h4>
+												<td>
+													<a align="right">
+
+														<li>
+															Model:
+															<field name="car_model" />
+														</li>
+														<field name="priority" widget='priority' />
+														<li>
+															State:
+															<field name="car_regstate" />
+														</li>
+														<li>
+															Reg.Number:
+															<field name="car_regnumber" />
+														</li>
+														<li>
+															Status:
+															<field name="statusbar" />
+														</li>
+														<li>
+															Progress:
+															<field name="percent_bar" widget="progressbar" />
+														</li>
+
+													</a>
+												</td>
+											</h4>
+											<div name="tags" />
+											<ul>
+												<li>
+													Records:
+													<field name="total_cost"></field>
+												</li>
+											</ul>
+										</div>
+									</tr>
+									<a type="button">
+										<button name="%(vechiclemanufacturer.launch_session_wizardss)d"
+											type="action" class="oe_highlight">
+											<span>Wizard</span>
+
+										</button>
+									</a>
+								</table>
+							</div>
+						</div>
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+
+
+	<record model="ir.ui.view" id="customer_details_calendar_view">
+		<field name="name">custommer_details.calendar</field>
+		<field name="model">customer.car</field>
+		<field name="type">calendar</field>
+		<field name="arch" type="xml">
+			<calendar day_length="1" color="customer_name" date_start="deadline_start_date"
+				date_stop="deadline_end_date" string="personal_details">
+				<field name="customer_name" />
+				<field name="deadline_start_date" />
+				<field name="deadline_end_date" />
+				<field name="car_model" />
+				<field name="car_regnumber" />
+			</calendar>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="customer_details_graph_view">
+		<field name="name">customer_details_graph</field>
+		<field name="model">customer.car</field>
+		<field name="type">graph</field>
+		<field name="arch" type="xml">
+			<graph string=" Customer details">
+				<field name="customer_name" />
+				<field name="deadline_start_date" />
+				<field name="deadline_end_date" />
+
+				<field name="total_cost" readonly="1" />
+			</graph>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="customer_details_search_view">
+		<field name="name">customer_details_search</field>
+		<field name="model">customer.car</field>
+		<field name="type">search</field>
+		<field name="arch" type="xml">
+			<search string="customer_details">
+				<field name="customer_name" />
+				<filter string="Below 2000" icon="terp-personal" domain="[('total_cost','>',2000)]" />
+				<field name="deadline_start_date" />
+				<field name="deadline_end_date" />
+				<field name="car_model" />
+				<field name="car_regnumber" />
+				<field name="address" />
+				<field name="total_cost" readonly="1" />
+				<filter string="Car Model" context="{'group_by':'car_model'}" />
+				<field name="statusbar" />
+				<filter string="Current Status" context="{'group_by':'statusbar'}" />
+				<!-- <filter name="cust_id" filter_domain="[('cust_id','ilike',self)]"/> -->
+			</search>
+		</field>
+	</record>
+
+
+
+
+	<record model="ir.actions.act_window" id="customer_action_window">
+		<field name="name">customer</field>
+		<field name="res_model">customer.car</field>
+		<field name="view_mode">kanban,tree,form,calendar,graph</field>
+		<field name="view_type">form</field>
+		<field name="usage">menu</field>
+	</record>
+
+
+	<!-- <menuitem name="carmanufactureTRAINEEAPP" id="carmenuID_menu" /> -->
+	<menuitem name="VMSbaseModule" id="ProductioID_menu" />
+
+	<menuitem name="CUSTOMER MANAGEMENT" id="customer_manage"
+		parent="ProductioID_menu" />
+	<menuitem name="customer management" id="customer_parts1"
+		parent="customer_manage" action="customer_action_window"
+		groups="vechiclemanufacturer.group_anna,vechiclemanufacturer.group_vicky" />
+
+</odoo>

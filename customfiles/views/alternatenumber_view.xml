@@ -1,0 +1,19 @@
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="inherit_alternate_list">
+			<field name="name">inheritalternate list</field>
+			<field name="model">customercustom.vms</field>
+			<field name="inherit_id" ref="vechiclemanufacturercustom.customervms_form_view1" />
+			<field name="arch" type="xml">
+								
+				
+				<xpath expr="//field[@name='customer_fax']" position="after">
+					<field name="alternate_number" placeholder="Alternate phone number" />
+					<!-- <field name="statusbar_custom" widget="statusbar" /> -->
+					
+					
+				</xpath>
+			</field>
+		</record>
+	</data>
+</openerp>

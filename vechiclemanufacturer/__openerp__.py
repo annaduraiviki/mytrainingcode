@@ -1,0 +1,43 @@
+{
+'name': "Vechicle management system",
+'summary': "Trainees Vechiclemanufacturing system management system",
+'description':""" D.Annadurai App Sodexis 2016 """,
+'author': "Annadurai",
+'website': "www.google.com ",
+'category': 'uncategorized',
+'version':'0.1',
+'depends':['base','mail','customcountrystate','board'],
+'data':[#'views/production.xml',
+        #'views/carparts.xml',
+        #'views/service.xml',
+        'security/vechicle_security.xml',
+        'security/ir.model.access.csv',
+       # 'views/login.xml',
+        'wizard/customer_wizard_xml.xml',
+       # 'wizard/customer_wizard_xml2.xml',
+        'views/customer.xml',
+       'views/companymanagement.xml',
+        'views/supplier.xml',
+        'views/serviceman.xml',
+        #'views/report_customer.xml',
+        #'customer_report.xml',
+       #'views/partner.xml',
+        'views/partsprovider_view.xml',
+         'views/companyleavemanagement_view.xml',         
+        'views/token_reservation_view.xml',
+        'views/products_view.xml',
+        'views/products_menu.xml',
+         #'views/view_window.xml',
+        # 'views/javascript_sample.xml',
+       #'views/customerpipeline_view.xml',
+        'views/quotation-pipeline.xml',
+        'views/report_supplier.xml',
+        'supplier_report.xml',
+        'views/dashboard_vechicle.xml',
+       
+       
+        ],
+        
+       
+
+}

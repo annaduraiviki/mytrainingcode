@@ -1,0 +1,59 @@
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="partsprovider_list">
+			<field name="name">partsprovider list</field>
+			<field name="model">partsprovider.vechicle</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="id" />
+					<field name="parts_provider" />
+					<field name="parts_name" />
+					<field name="parts_price" />
+
+					<!-- <field name="part_regnumber"/> <field name="parts_Name"/> <field 
+						name="date_purchased"/> <field name="product_price"/> <field name="product_quantity"/> 
+						<field name="product_tax"/> <field name="total_price" /> <field name="address"/> 
+						<field name="cust_id" widget="many2onebutton" /> -->
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="partsprovider_form_views">
+			<field name="name">partsprovider form</field>
+			<field name="model">partsprovider.vechicle</field>
+			<field name="arch" type="xml">
+				<form string="Parts provider management management">
+
+					<group colspan="2" col="2">
+						<separator string=" Parts provider details" col="2"
+							colspan="2" />
+						<field name="id" />
+						<field name="parts_provider" />
+						<field name="parts_name"  style="width:70%%" />
+						<!-- <kanban> <field name="name"/> <templates> <t t-name="kanban-box"> 
+							<field name="name"/> </t> </templates> </kanban> </field> -->
+						<field name="parts_price" />
+						</group>
+				</form>
+			</field>
+		</record>
+		<!-- FOR SEQUENCE NUMBER USE THIS BELOW CODE -->
+		<!-- <record id="seq_type_id1" model="ir.sequence.type"> <field name="name">Name</field> 
+			<field name="code">code</field> </record> <record id="seq_id1" model="ir.sequence"> 
+			<field name="name">Name</field> <field name="code">code</field> <field name="padding" 
+			eval="pading" /> <field name="prefix">prefix</field> <field name="suffix">suffix</field> 
+			</record> -->
+
+		<record model="ir.actions.act_window" id="partsprovider_action_window">
+			<field name="name">partsprovidermanagement</field>
+			<field name="res_model">partsprovider.vechicle</field>
+			<field name="view_mode">tree,form,kanban</field>
+			<field name="view_type">form</field>
+			<field name="usage">menu</field>
+		</record>
+		
+		<menuitem name="parts provider management" id="parts provider_parts1"
+			parent="supplier_manage" action="partsprovider_action_window" />
+
+	</data>
+</openerp>

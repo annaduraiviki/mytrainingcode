@@ -1,0 +1,48 @@
+<odoo>
+	<record id="projtask_smap" model="ir.actions.act_window">
+		<field name="name">Sales and Quotations</field>
+		<field name="res_model">project.task</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">kanban,tree,form</field>
+		<field name="context">{'search_default_partner_id': active_id}</field>
+	</record>
+
+	<record model="ir.ui.view" id="inherit_list">
+		<field name="name">inherit list</field>
+		<field name="model">res.partner</field>
+		<field name="inherit_id" ref="base.view_partner_form" />
+		<field name="arch" type="xml">
+			<xpath expr="//field[@name='name']" position="after">
+				<!-- <field name="sale_percentage" placeholder="Sale Percentage" /> -->
+				<field name="last_name" placeholder="Last Name" />
+				<field name="surname_select" />
+			</xpath>
+
+			<div class="oe_button_box" name="button_box" position="inside">
+				<button name="%(sale.act_res_partner_2_sale_order)d" type="action"
+					class="oe_stat_button oe_link" style="background:rgba(46, 210, 162,0.2);"
+					icon="fa-user" attrs="{'invisible':[('last_name','=',False)]}"
+					context="{'search_default_partner_id': active_id}">
+					<field name="full_name" widget="statinfo" nolabel="1" />
+				</button>
+				<button name="%(projtask_smap)d" type="action" class="oe_stat_button"
+					string="TASK" icon="fa-calendar">
+				</button>
+			</div>
+
+			<xpath expr="//page[@name='sales_purchases']" position="before">
+				<page string="Customer details">
+					<field name="home_address" />
+					<field name="priority_name" widget="priority" />
+				</page>
+			</xpath>
+
+			<xpath expr="//field[@name='title']" position="attributes">
+				<attribute name="invisible">True</attribute>
+			</xpath>
+
+		</field>
+	</record>
+
+
+</odoo>

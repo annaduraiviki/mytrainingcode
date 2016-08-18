@@ -1,0 +1,122 @@
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="supplier_list">
+			<field name="name">supplier list</field>
+			<field name="model">supplier.car</field>
+			<field name="arch" type="xml">
+				<tree default_group_by="supplier_name">
+					<field name="id" />
+					<field name="supplier_name" />
+					<field name="part_regnumber" />
+					<field name="parts_Name" />
+					<field name="date_purchased" />
+					<field name="product_price" />
+					<field name="product_quantity" />
+					<field name="product_tax" />
+					<field name="total_price" />
+					<field name="address" />
+					<field name="cust_id"  /> <!-- widget="many2onebutton" -->
+					<field name="progress_bar" widget="progressbar" />
+					<field name="parts" placeholder="parts" />
+					<!-- <filter string="By supplier" context="{'group_by':'supplier_name'}"/> -->
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="supplier_form_views">
+			<field name="name">supplier form</field>
+			<field name="model">supplier.car</field>
+
+			<field name="arch" type="xml">
+				<form string="supplier management">
+					<header>
+
+						<button string="New" type="object" name="new_func"
+							attrs="{'invisible': [('statusbar_custom', '=', 'new')]}" />
+						<!--The oe_highlight class gives the button a red color when it is 
+							saved. It is usually used to indicate the expected behaviour. -->
+						<button string="Draft" type="object" name="draft_func"
+							class="oe_highlight" attrs="{'invisible': [('statusbar_custom','!=','draft')]}" />
+						<button string="Cancel" type="object" name="cancel_func"
+							attrs="{'invisible': [('statusbar_custom','=','cancel')]}" />
+						<button string="confirm" type="object" name="confirm_func"
+							attrs="{'invisible': [('statusbar_custom','=','confirm')]}" />
+						<button string="done" type="object" name="done_func"
+							attrs="{'invisible': [('statusbar_custom','=','done')]}" />
+						<!--This will create the statusbar, thanks to the widget. -->
+						<field name="statusbar_custom" widget="statusbar" />
+
+					</header>
+					<sheet>
+
+						<group colspan="4" col="4">
+							<separator string=" SUPPLIER DETAILS" col="2" colspan="6" />
+							<field name="id" />
+							<field name="supplier_name" />
+							<field name="part_regnumber" />
+							<field name="parts_Name" />
+							<field name="date_purchased" widget="date" />
+							<field name="product_price" />
+							<field name="product_quantity" />
+							<field name="product_tax" />
+							<field name="total_price" widget="payement" />
+							<field name="country_base" />
+							<field name="state_custom" />
+							<field name="area_base" />
+							<field name="address" />
+							<field name="cust_id" placeholder=" Please provide Customer ID to update price" />
+							<field name="progress_bar" widget="progressbar" />
+						</group>
+						<group colspan="4" col="4">
+							<field name="parts" placeholder="parts" readonly="1" />
+						</group>
+						<group>
+							<div class="button_box">
+								<button name="tot_parts_price" type="object"
+									class="oe_highlight oe_stat_info oe_right o_wow  " string="Total Amounts"
+									icon="fa-inr">
+
+									<field name="total_parts_price" class="oe_right"
+										readonly="1" />
+								</button>
+							</div>
+							<!-- <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i> <span class="sr-only">Loading...</span> 
+								<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i> <span class="sr-only">Loading...</span> 
+								<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> <span class="sr-only">Loading...</span> 
+								<i class="fa fa-cog fa-spin fa-3x fa-fw"></i> <span class="sr-only">Loading...</span> 
+								<i class="fa fa-spinner fa-pulse fa-3x fa-fw"> </i> <span class="sr-only">Loading...</span> -->
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="supplier_details_search_view">
+			<field name="name">supplier_details_search</field>
+			<field name="model">supplier.car</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="supplierr_details">
+					<field name="cust_id" />
+					
+				</search>
+			</field>
+		</record>
+		
+		
+
+		<record model="ir.actions.act_window" id="supplier_action_window">
+			<field name="name">suppliermanagement</field>
+			<field name="res_model">supplier.car</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_type">form</field>
+			<field name="usage">menu</field>
+		</record>
+
+		<menuitem name="SUPPLIER MANAGEMENT" id="supplier_manage"
+			parent="ProductioID_menu" />
+		<menuitem name="supplier management" id="supplier_parts1"
+			parent="supplier_manage" action="supplier_action_window" />
+
+	</data>
+</openerp>

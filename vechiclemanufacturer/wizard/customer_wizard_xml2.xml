@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<odoo>
+	<record model="ir.ui.view" id="wizard_form_views2">
+		<field name="name">wizard.form</field>
+		<field name="model">customer.form.wizard2</field>
+		<field name="arch" type="xml">
+			<form string="Select Customer name">
+				<group>
+					<field name="session_id" />
+					<!-- <field name="attendee_ids"/> -->
+				</group>
+				<footer>
+					<button name="subscribe2" type="object" string="Change Default address"
+						class="oe_highlight" />
+
+					<button special="cancel" string="Cancel" />
+				</footer>
+			</form>
+		</field>
+	</record>
+	
+	
+	
+	<!-- <record model="ir.ui.view" id="wizard_object">
+		<field name="name">wiz</field>
+		<field name="model">customer.car</field>
+		<field name="inherit_id" ref="vechiclemanufacturer.customer_form_views" />
+		<field name="arch" type="xml">
+			<data>
+				<xpath expr="//field[@name='car_model']" position="after">
+					<button name="subscribe2" type="object" string="wizOBJ"
+						colspan="2" />
+				</xpath>
+			</data>
+		</field>
+	</record> -->
+
+	
+</odoo>

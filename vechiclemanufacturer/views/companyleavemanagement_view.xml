@@ -1,0 +1,56 @@
+
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="leave_list1">
+			<field name="name">leave list</field>
+			<field name="model">leave.company</field>
+			<field name="arch" type="xml">
+				<tree decoration-danger="total_days&gt;10" decoration-info="total_days&lt;10">
+					<!-- <field name="id" /> -->
+					<field name="id" />
+					
+					<field name="companyleave_id" />
+					<field name="leave_type"/>
+					<!-- <field name="max_leave_take"/> -->
+					<field name="leave_reason" />
+					<field name="from_date" />
+					<field name="to_date" />
+					<field name="total_days" sum="total days" widget="monetary" class="oe_subtotal_footer" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="leave1_form_views1">
+			<field name="name">leave form</field>
+			<field name="model">leave.company</field>
+			<field name="arch" type="xml">
+				<form string="Leave management">
+					<sheet>
+							<group string="Leave management form">
+							<field name="id" />
+							<field name="companyleave_id" />
+							<field name="leave_type"/>
+							<!-- <field name="max_leave_take"/> --> 
+							<field name="leave_reason" />
+							<field name="from_date" />
+							<field name="to_date" />
+							<field name="total_days" />
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="companyleave_action_window1">
+			<field name="name">Leavemanagement</field>
+			<field name="res_model">leave.company</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_type">form</field>
+			<field name="usage">menu</field>
+		</record>
+
+		<menuitem name="Company Leave management" id="company_parts2" parent="company_manage" action="companyleave_action_window1" />
+
+	</data>
+</openerp>

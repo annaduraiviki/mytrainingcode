@@ -1,0 +1,146 @@
+<odoo>
+	<template id="report_supplier">
+		<t t-call="report.html_container">
+			<t t-foreach="docs" t-as="z">
+				<t t-call="report.external_layout">
+					<div class="page">
+						<br></br>
+						<div class="col-xs-3 col-xs-offset-9">
+							<strong>
+								<p> FORD Management &amp; Services</p>
+							</strong>
+							<img src='/vechiclemanufacturer/static/src/img/header.png'
+								style="max-height: 45px;" />
+							<br></br>
+						</div>
+						<br>
+						</br>
+						<div style="float:center">
+							<p>
+								CUSTOMER ID :
+								<span t-field="z.cust_id" />
+							</p>
+							<p>
+								SUPPLIER NAME :
+								<span t-field="z.supplier_name" />
+							</p>
+							<p>
+								PARTS ORDERED :
+								<span t-field="z.parts_Name" />
+							</p>
+							<p>
+								DATE OF PURCHASE :
+								<span t-field="z.date_purchased" />
+							</p>
+							<p>
+								PRODUCT PRICE :
+								<span t-field="z.product_price" />
+							</p>
+							<p>
+								QUANTITY ORDERED :
+								<span t-field="z.product_quantity" />
+							</p>
+							<p>
+								Tax :
+								<span t-field="z.product_tax" />
+							</p>
+							<!-- <img t-att-src="'/report/barcode/QR/%s' % 'aprila'"/> -->
+
+							<!-- <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' 
+								% ('EAN13',ean13, 600, 100)" style="width:300px;height:50px" /> -->
+						</div>
+						<div style="float:center">
+						<h3><strong>Current order:</strong></h3>
+							<table border="1" class="table table-condensed" style="border-bottom:solid">
+								<thead>
+									<tr>
+										<th style="border: 1px solid black" class="text-center">CUSTOMER ID
+										</th>
+										<th style="border: 1px solid black" class="text-center">SUPPLIER NAME :
+										</th>
+										<th style="border: 1px solid black" class="text-center">PARTS ORDERED :
+										</th>
+										<th style="border: 1px solid black" class="text-center">DATE OF PURCHASE
+											:
+										</th>
+										<th style="border: 1px solid black" class="text-center">PRODUCT PRICE :
+										</th>
+										<th style="border: 1px solid black" class="text-center">QUANTITY ORDERED
+											:
+										</th>
+										<th style="border: 1px solid black" class="text-center">Tax :
+										</th>
+										<th style="border: 1px solid black" class="text-center">Total Price:
+										</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr t-foreach="docs" t-as="line">
+										<td style="border-bottom: 1px solid black">
+											<span t-field="line.cust_id" />
+										</td>
+										<td style="border-bottom: 1px solid black">
+											<span t-field="line.supplier_name" />
+										</td>
+										<td style="border-bottom: 1px solid black">
+											<span t-field="line.parts_Name" />
+										</td>
+										<td style="border-bottom: 1px solid black">
+											<span t-field="line.date_purchased" />
+										</td>
+										<td style="border-bottom: 1px solid black">
+											<span t-field="line.product_price" />
+										</td>
+										<td style="border-bottom: 1px solid black">
+											<span t-field="line.product_quantity" />
+										</td>
+										<td style="border-bottom: 1px solid black">
+											<span t-field="line.product_tax" />
+										</td>
+										<td style="border-bottom: 1px solid black">
+											<span t-field="line.total_price" />
+										</td>
+
+									</tr>
+								</tbody>
+								</table>
+								<br></br>
+								<br></br>
+								<br></br>
+								<h4><strong>Sub parts ordered:</strong></h4>
+								<table border="1" class="table table-condensed" style="border-bottom:solid">
+									<thead>
+										<tr>
+											<th style="border: 1px solid black" class="text-center">Serial Number:
+											</th>
+											<th style="border: 1px solid black" class="text-center">Parts Name:
+											</th>
+											<th style="border: 1px solid black" class="text-center">Parts price:
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+									<tr t-foreach="z.parts" t-as="l"> <!-- FOR ONE2many -->
+										<td style="border-bottom: 1px solid black">
+											<span t-esc="l_index+1" />
+										</td>
+										<td style="border-bottom: 1px solid black">
+											<span t-field="l.parts_name" />
+										</td>
+										<td style="border-bottom: 1px solid black">
+											<span t-field="l.parts_price" />
+										</td>
+									</tr>
+								</tbody>
+								<p>Total Amount</p>
+								<span t-field="z.total_parts_price"/>
+								
+							</table>
+						</div>
+					</div>
+				</t>
+			</t>
+		</t>
+	</template>
+</odoo>

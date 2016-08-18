@@ -1,0 +1,23 @@
+<odoo>
+	<record id="button_issue" model="ir.actions.act_window">
+		<field name="name">create Task</field>
+		<field name="res_model">project.task</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">form</field>
+	</record>
+
+	<record id="create_task_from_issue_inherit_list" model="ir.ui.view">
+		<field name="name">inherit create task from issue list</field>
+		<field name="model">project.issue</field>
+		<field name="inherit_id" ref="project_issue.project_issue_form_view" />
+		<field name="arch" type="xml">
+			<xpath expr="//field[@name='task_id']" position="after"
+				colspan="4">
+				<button name="%(button_issue)d" type="action" string="Create Task"
+					class="oe_button oe_highlight"
+					context="{'default_name':name,'default_project_id':project_id,'default_user_id':user_id,'default_tag_ids':tag_ids}"
+					attrs="{'invisible':[('task_id','!=',False)]}" />
+			</xpath>
+		</field>
+	</record>
+</odoo> 

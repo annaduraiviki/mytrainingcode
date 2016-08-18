@@ -1,0 +1,53 @@
+<odoo>
+<!-- <record model="ir.ui.view" id="view2_base_view">
+
+    <field name="name">Client</field>
+
+    <field name="model">model.one</field>
+
+    <field name="priority">1</field>
+
+    <field name="arch" type="xml">
+
+        <form string="secondary element">
+
+            <sheet>
+				<field name="msg"/>
+            </sheet>
+
+        </form>
+
+    </field>
+
+</record> -->
+
+<record model="ir.ui.view" id="view1_primary_mode_view">
+    <field name="name">Client Extended</field>
+    <field name="model">personal.details</field>
+    <field name="priority">8</field>
+    <field name="inherit_id" ref="Basic_views.personal_details_form_view"/>
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='contact']" position="after">
+                <field name="msg"/>
+        </xpath>
+    </field>
+</record>
+
+		<!-- <record model="ir.actions.act_window" id="Mainmode_window_action_window">
+			<field name="name">Mainwindowmanagement</field>
+			<field name="res_model">model.one</field>
+			<field name="view_mode">form</field>
+			<field name="view_type">form</field>
+			<field name="usage">menu</field>
+		</record>
+
+
+		 <menuitem name="modeprimary" id="mode_menu" /> 
+
+		
+		<menuitem name="Main Window" id="main_window1" parent="mode_menu"
+			action="Mainmode_window_action_window" /> -->
+
+
+</odoo>

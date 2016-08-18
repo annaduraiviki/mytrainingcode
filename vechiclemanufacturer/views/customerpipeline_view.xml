@@ -1,0 +1,115 @@
+<odoo>
+
+
+<record model="ir.ui.view" id="My_kanban_pipelines">
+		<field name="name">Kanban_Pipeline</field>
+		<field name="model">customer.car</field> 
+		<field name="arch" type="xml">
+			<kanban  default_group_by="statusbar" class="o_kanban_small_column">
+				<field name="customer_name" />
+				<field name="car_model" />
+				<field name="car_regnumber" />
+				<field name="address" />
+				<field name="total_cost" readonly="1" />
+				<field name="priority" widget='priority' />
+				<field name="statusbar" />
+				<field name="percent_bar" widget="progressbar" />
+				<!-- <field name="name"/> <field name="code"/> <field name="lst_price"/> -->
+				<templates>
+					<t t-name="kanban-box">
+						<div class="oe_kanban_vignette oe_semantic_html_override">
+							<table>
+								<tr>
+									<td>
+										<a type="open">
+											<li>
+												Customer Name:
+												<strong>
+													<field name="customer_name" />
+												</strong>
+											</li>
+											<img height="80" width="80"
+												t-att-src="kanban_image('customer.car', 'customer_avatar', record.id.value)"
+												class="oe_kanban_image" />
+										</a>
+									</td>
+																	                          
+									<div class="oe_kanban_details">
+										<h4>
+											<td>
+												<a type="open" align="right">
+
+													<li>
+														Model:
+														<field name="car_model" />
+													</li>
+													<field name="priority" widget='priority' />
+													
+													<li>
+														Reg.Number:
+														<field name="car_regnumber" />
+													</li>
+													<li>
+														Status:
+														<field name="statusbar" />
+													</li>
+													<li>
+														Progress:
+														<field name="percent_bar" widget="progressbar" />
+													</li>
+
+												</a>
+											</td>
+										</h4>
+										<div name="tags" />
+										<ul>
+											<li>
+												Records:
+												<field name="total_cost"></field>
+											</li>
+										</ul>
+									</div>
+								</tr>
+							</table>
+						</div>
+
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="customer_details_search_view2_pipeline">
+			<field name="name">customer_details_search_2</field>
+			<field name="model">customer.car</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="customer_details">
+					<field name="customer_name" />
+					<filter string="Below 2000" icon="terp-personal" domain="[('total_cost','>',2000)]" />
+					<field name="deadline_start_date" />
+					<field name="deadline_end_date" />
+					<field name="car_model" />
+					<field name="car_regnumber" />
+					<field name="address" />
+					<field name="total_cost" readonly="1" />
+					<filter string="Car Model" context="{'default_group_by':'car_model'}"/>
+					<field name="statusbar" />
+					<filter string="Current Status" context="{'group_by':'statusbar'}"/>
+				</search>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="pipeline_customer">
+		<field name="name">customer_pipelines</field>
+		<field name="res_model">customer.car</field>
+		<field name="view_mode">kanban,graph</field>
+		 <field name="view_type">form</field> 
+		<field name="usage">menu</field>
+	</record>
+
+
+	<menuitem name="Customer-Pipeline " id="customer_parts1_pipelines"
+		parent="customer_manage" action="pipeline_customer" />
+
+</odoo>

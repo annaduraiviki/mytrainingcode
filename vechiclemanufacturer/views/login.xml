@@ -1,0 +1,41 @@
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="login_form_views">
+			<field name="name">Login form</field>
+			<field name="model">login.vechicle</field>
+			<field name="arch" type="xml">
+				<form string="login ">
+					<sheet>
+						<h1><separator String="VECHICLE MANAGEMENT SYSTEM" /></h1>
+						<separator string="LOGIN FORM" />
+						<group colspan="2">
+							<field name="id" />
+							<field name="user_name" style="width:60%%;height:5%%;font-size:15px" placeholder=" USER NAME" default_focus="3"/>
+							<field name="password_login" style="width:60%%;height:5%%;font-size:15px" placeholder=" PASSWORD" password="1"/>
+							
+							<!-- <button name="check_user_password" type="action" class="oe_highlight" 
+								icon="fa-user" > </button> -->
+								
+							<field name="check_valid" />
+							<button name="%(customer_action_window)d" type="action"
+								class="oe_highlight oe_stat_info oe_right o_wow" style="background-color:#32CD32"
+								icon="fa-sign-in" attrs="{'invisible':[('check_valid','=',False)]}" />
+								<button name="clear_user_password" type="object" class="oe_highlight oe_right oe_stat_info" style="background-color:#FF4500" icon="fa-trash"	/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="login_action_window">
+			<field name="name">Production</field>
+			<field name="res_model">login.vechicle</field>
+			<field name="view_mode">form</field>
+			<field name="view_type">form</field>
+		</record>
+					
+		<menuitem name="LOGIN" id="login1" parent="ProductioID_menu"
+			action="login_action_window" sequence="0" />
+
+	</data>
+</openerp>

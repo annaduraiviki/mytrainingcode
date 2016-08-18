@@ -1,0 +1,1974 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vechiclemanufacturer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-01 10:43+0000\n"
+"PO-Revision-Date: 2016-08-01 10:43+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_car_regnumber
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_car_regnumber
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_car_regnumber
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_car_regnumber
+msgid " Car Register Number"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_login_vechicle_check_valid
+msgid " Login"
+msgstr "ലോഗിൻ"
+
+#. module: vechiclemanufacturer
+#: sql_constraint:customer.car:0
+#: sql_constraint:customer.form.wizard2:0
+#: sql_constraint:part.samp:0
+#: sql_constraint:window.main:0
+msgid " Mobile Number must be unique!"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: sql_constraint:productselection.car:0
+msgid " Product name already exists"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_priority_but
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_priority_but
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_priority_but
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_priority_but
+msgid " priority count"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban
+msgid "<span>Wizard</span>"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "<strong>Current order:</strong>"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "<strong>Sub parts ordered:</strong>"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_admin_access
+msgid "ADMIN ACCESS"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.launch_session_wizardss
+msgid "Add Attendees"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_admin_phonenumber
+msgid "Admin phone number"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_admin_name
+msgid "AdminName"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_reserve_token
+msgid "Allot Token"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_amount_total
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_amount_total
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_amount_total
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_amount_total
+msgid "Amount Total"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_area_base
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_area_base
+msgid "Area"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_session_ids
+msgid "Attended Sessions"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_details_search_view_pipeline
+msgid "Below 10 Qty"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_details_search_view
+msgid "Below 2000"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:carparts.vechicle,tyres:0
+msgid "Bridgestone"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_details_search_view_pipeline
+msgid "By Country"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_details_search_view_pipeline
+msgid "By customer"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.token_form_views
+msgid "CAR TOKEN DETAILS"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.company_manage
+msgid "COMPANY MANAGEMENT"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.company_form_views
+msgid "COMPANY MANAGEMENT FORM"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.config_prod
+msgid "CONFIGURATION"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_total_cost
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_total_cost
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_total_cost
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_total_cost
+msgid "COST INFORMATION"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "CUSTOMER GENERAL INFORMATION"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_cust_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_cust_id
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "CUSTOMER ID"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "CUSTOMER ID :"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.customer_manage
+msgid "CUSTOMER MANAGEMENT"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "CUSTOMER PERSONAL INFORMATION"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.dashboard_car
+msgid "Calendar"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,statusbar:0
+#: selection:customer.form.wizard2,statusbar:0
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.wizard_form_views
+#: selection:part.samp,statusbar:0
+#: selection:products.car,status:0
+#: selection:supplier.car,statusbar_custom:0
+#: selection:window.main,statusbar:0
+msgid "Cancel"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_car_model
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_car_model
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_car_model
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_car_model
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_details_search_view
+msgid "Car Model"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_carmodel
+msgid "Car model"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_car_model_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_car_model_name
+msgid "CarMODEL"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.wizard_form_views
+msgid "Change Default address"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_color
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_color
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_color
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_color
+msgid "Color"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.dashboard_car
+msgid "Company Dashboard"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.company_parts2
+msgid "Company Leave management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.company_parts1
+msgid "Company management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,statusbar:0
+#: selection:customer.form.wizard2,statusbar:0
+#: selection:part.samp,statusbar:0
+#: selection:products.car,status:0
+#: selection:supplier.car,statusbar_custom:0
+#: selection:window.main,statusbar:0
+msgid "Confirm"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_costprice
+msgid "Cost price"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_country_base
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_country_base
+msgid "Country"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_reason_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_login_vechicle_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selection_selection_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selecttoken_vechicle_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_create_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_reason_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_login_vechicle_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selection_selection_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selecttoken_vechicle_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_create_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_details_search_view
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_details_search_view_pipeline
+msgid "Current Status"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_statusbar
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_statusbar
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_statusbar
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_status
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_statusbar
+msgid "Current status"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_customer_count
+msgid "Cust. Count"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_address
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_address
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_address
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_address
+msgid "Customer Address"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_customer_avatar
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_customer_avatar
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_customer_avatar
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_customer_avatar
+msgid "Customer Avatar"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.dashboard_action
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.dashboard_car
+msgid "Customer Dashboard"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Customer Expenditures"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_customer_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_customer_id
+msgid "Customer ID"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_management
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_management
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_management
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_management
+msgid "Customer Management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_cus_mobilenumb
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_cus_mobilenumb
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_cus_mobilenumb
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_cus_mobilenumb
+msgid "Customer Mobile Number"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_customer_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_customer_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_customer_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_customer_name
+msgid "Customer Name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban
+msgid "Customer Name:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_details_graph_view
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Customer details"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Customer state"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Customer vechicle register number"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban_Product_pipelines
+msgid "CustomerID:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.dashboard_analysiss
+msgid "DASHBOARD-VMS"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_date_purchased
+msgid "DATE OF PURCHASE"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "DATE OF PURCHASE\n"
+"											:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "DATE OF PURCHASE :"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.dashboard_car
+msgid "Dashboard"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_date_display
+msgid "Date"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,help:vechiclemanufacturer.field_comapany_car_message_last_post
+msgid "Date of the last message posted on the record."
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_date_window
+msgid "Date window"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_deadline_end_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_deadline_end_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_deadline_end_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_deadline_end_date
+msgid "Deadline"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_deduction
+msgid "Deduct"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Delete"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_reason_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_login_vechicle_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selection_selection_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selecttoken_vechicle_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_display_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,statusbar:0
+#: selection:customer.form.wizard2,statusbar:0
+#: selection:part.samp,statusbar:0
+#: selection:products.car,status:0
+#: selection:supplier.car,statusbar_custom:0
+#: selection:window.main,statusbar:0
+msgid "Done"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,statusbar:0
+#: selection:customer.form.wizard2,statusbar:0
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_form_views
+#: selection:part.samp,statusbar:0
+#: selection:products.car,status:0
+#: selection:supplier.car,statusbar_custom:0
+#: selection:window.main,statusbar:0
+msgid "Draft"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_mailaddress
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_mailaddress
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_mailaddress
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_mailaddress
+msgid "EMAIL - ID"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_comapany_car
+msgid "Email Thread"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_encode_value
+msgid "Encode value"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_qty
+msgid "Enter Qty"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_a
+msgid "Enter to decode"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_customer_tot_cost
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_customer_tot_cost
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_customer_tot_cost
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_customer_tot_cost
+msgid "Expenditures"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:supplier.car,supplier_name:0
+msgid "FORD INDIA"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "FORD Management &amp; Services"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:supplier.car,supplier_name:0
+msgid "FORD UK"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:production.vechicle,carmodel:0
+msgid "Fiego"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,car_model:0
+#: selection:customer.form.wizard2,car_model:0
+#: selection:part.samp,car_model:0
+#: selection:window.main,car_model:0
+msgid "Fistea"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_follow_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_follow_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_follow_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_follow_id
+msgid "Followers ID"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_followers_msg
+msgid "Followers msg"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:supplier.car,supplier_name:0
+msgid "Ford US"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_from_date
+msgid "From date"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,help:vechiclemanufacturer.field_comapany_car_admin_access
+msgid "Give Code to access this form for adding customer"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:carparts.vechicle,light_model:0
+msgid "Headlight"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_reason_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_login_vechicle_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selection_selection_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selecttoken_vechicle_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_id
+msgid "ID"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,help:vechiclemanufacturer.field_login_vechicle_check_valid
+msgid "If USER NAME and PASSWORD are Matched, Then it will show you LOGIN BUTTON"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,help:vechiclemanufacturer.field_comapany_car_message_unread
+msgid "If checked new messages require your attention."
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,help:vechiclemanufacturer.field_comapany_car_message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_image_window
+msgid "Image window"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_percent_bar
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_percent_bar
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_percent_bar
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_percent_bar
+msgid "In Progress"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_instructor
+msgid "Instructor"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:carparts.vechicle,light_model:0
+msgid "InteriorLight"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: code:addons/vechiclemanufacturer/wizard/customer_wizard2.py:17
+#, python-format
+msgid "Journal Items"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,car_regstate:0
+#: selection:customer.form.wizard2,car_regstate:0
+#: selection:part.samp,car_regstate:0
+#: selection:window.main,car_regstate:0
+msgid "KERALA"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.login1
+msgid "LOGIN"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.login_form_views
+msgid "LOGIN FORM"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_message_last_post
+msgid "Last Message Date"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_reason___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_login_vechicle___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selection_selection___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selecttoken_vechicle___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle___last_update
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_reason_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_login_vechicle_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selection_selection_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selecttoken_vechicle_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_write_uid
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_reason_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_login_vechicle_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selection_selection_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selecttoken_vechicle_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_write_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_final_date
+msgid "Last date"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_leave_details
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_leave_details
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.service1_form_views
+msgid "Leave Details"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_leave_reason
+msgid "Leave Reason"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_reason_leave_type
+msgid "Leave Type"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.leave1_form_views1
+msgid "Leave management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.leave1_form_views1
+msgid "Leave management form"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_leave_type
+msgid "Leave type"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.companyleave_action_window1
+msgid "Leavemanagement"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_light_model
+msgid "Light model"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:carparts.vechicle,tyres:0
+msgid "MRF"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_mrp
+msgid "MRP"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,car_model:0
+#: selection:customer.form.wizard2,car_model:0
+#: selection:part.samp,car_model:0
+#: selection:window.main,car_model:0
+msgid "MUSTANG GT"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:production.vechicle,carmodel:0
+msgid "MUSTANGGT"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_carmanufacturer
+msgid "Manufacturer"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_manufacturing_date
+msgid "Manufacturing date"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_reason_max_leave_take
+msgid "Maximum leave available"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_follow_msg
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_follow_msg
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_follow_msg
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_follow_msg
+msgid "Message"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:carparts.vechicle,tyres:0
+msgid "Michellin"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban
+msgid "Model:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,statusbar:0
+#: selection:customer.form.wizard2,statusbar:0
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_form_views
+#: selection:part.samp,statusbar:0
+#: selection:products.car,status:0
+#: selection:supplier.car,statusbar_custom:0
+#: selection:window.main,statusbar:0
+msgid "New"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_servicemen_count
+msgid "No. of Servicemen"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,help:vechiclemanufacturer.field_comapany_car_message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,help:vechiclemanufacturer.field_comapany_car_message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_progress_bar
+msgid "On Progress"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_parts_Name
+msgid "PARTS NAME"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "PARTS ORDERED :"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.login_form_views
+msgid "PASSWORD"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,car_regstate:0
+#: selection:customer.form.wizard2,car_regstate:0
+#: selection:part.samp,car_regstate:0
+#: selection:window.main,car_regstate:0
+msgid "PONDICHERRY"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_product_price
+msgid "PRODUCT PRICE"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "PRODUCT PRICE :"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:production.vechicle,carmodel:0
+msgid "PUNTO"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_partname
+msgid "Part name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_part_regnumber
+msgid "Part regnumber"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_parts
+msgid "Parts"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_parts_name
+msgid "Parts Name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "Parts Name:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_parts_available
+msgid "Parts here"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "Parts price:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_parts_provider
+msgid "Parts provider"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.partsprovider_form_views
+msgid "Parts provider details"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.partsprovider_form_views
+msgid "Parts provider management management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_login_vechicle_password_login
+msgid "Password"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Please enter customer name here"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_form_views
+msgid "Please provide Customer ID to update price"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_parts_price
+msgid "Price of the Part"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_priority
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_priority
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_priority
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_priority
+msgid "Priority"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_form_views
+msgid "Product DETAILS"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_details_search_view_dashboard
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.dashboard_car
+msgid "Product Dashboard"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.productsshow_form_views
+msgid "Product Details"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_image
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car_image
+msgid "Product Image"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_product_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_product_nameselection
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car_product_nameselection
+msgid "Product Name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban_Product_pipelines
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban_prod
+msgid "Product Name:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_product_quotation
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_product_quotation
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_product_quotation
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_product_quotation
+msgid "Product quotation"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.product_management1
+msgid "Product-Quotation"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_details_search_view_pipeline
+msgid "Product_details"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.login_action_window
+msgid "Production"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.productshow_action_window
+msgid "Productionshow"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.config_prod2
+msgid "Products-Config"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban
+msgid "Progress:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_product_quantity
+msgid "QUANTITY"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "QUANTITY ORDERED\n"
+"											:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "QUANTITY ORDERED :"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_quantity_button
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car_quantity_button
+msgid "Quantities"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_quantity
+msgid "Quantity"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_quantity_no
+msgid "Quantity no"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban_Product_pipelines
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban_prod
+msgid "Quantity:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Quotation"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.Quotation_parts1_pipelines
+msgid "Quotation-Pipeline "
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban
+msgid "Records:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban
+msgid "Reg.Number:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_car_reginfo
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_car_reginfo
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_car_reginfo
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_car_reginfo
+msgid "Register Information"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_register_number
+msgid "Register Number"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_from_date
+msgid "Register date"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_regular_customer
+msgid "Regular cust's"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_regular_customer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_regular_customer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_regular_customer
+msgid "Regular customer"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_review_customer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_review_customer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_review_customer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_review_customer
+msgid "Remarks"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.service_manage
+msgid "SERVICE MANAGEMENT"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.service1_form_views
+msgid "SERVICE MANAGEMENT FORM"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_address
+msgid "SUPPLIER ADDRESS"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_form_views
+msgid "SUPPLIER DETAILS"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.supplier_manage
+msgid "SUPPLIER MANAGEMENT"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_supplier_name
+msgid "SUPPLIER NAME"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "SUPPLIER NAME :"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_salary
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_salary
+msgid "Salary"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_samplefield
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_samplefield
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_samplefield
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_samplefield
+msgid "Samplefield"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_seater
+msgid "Seater"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.wizard_form_views
+msgid "Select Customer name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selecttoken_vechicle_select_token
+msgid "Select Token"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_sequence_number
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_sequence_number
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_sequence_number
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_sequence_number
+msgid "Sequence number"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "Serial Number:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_service
+msgid "Service"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_service_cost
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_service_cost
+msgid "Service Cost"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_serviceman_nameinadmin
+msgid "Service Man Name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Service Management and servicer"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_service_charge
+msgid "Service charge"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_serviceman_address
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_serviceman_address
+msgid "Service man Address"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.service_parts1
+msgid "Service management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.service1_form_views
+msgid "Serviceman Personal Details"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.company_details_search_view
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.companymanagement_list
+msgid "Serviceman name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_serviceman_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_serviceman_id
+msgid "Servicemen ID"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_session_id
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard_session_id
+msgid "Session"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selecttoken_vechicle_no_slots
+msgid "Slots available"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Specify Customer's mobile number"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_details_search_view_dashboard
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.productsshow_form_views
+msgid "Specify Product name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_deadline_start_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_deadline_start_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_deadline_start_date
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_deadline_start_date
+msgid "Start date"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_car_car_regstate
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_car_regstate
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_part_samp_car_regstate
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_state
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_window_main_car_regstate
+msgid "State"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban
+msgid "State:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,help:vechiclemanufacturer.field_customer_car_statusbar
+#: model:ir.model.fields,help:vechiclemanufacturer.field_customer_form_wizard2_statusbar
+#: model:ir.model.fields,help:vechiclemanufacturer.field_part_samp_statusbar
+#: model:ir.model.fields,help:vechiclemanufacturer.field_window_main_statusbar
+msgid "Status if acceptance, Rejection, Confirmation or Cancel "
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.My_kanban_Product_pipelines
+msgid "Status:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_statusbar_custom
+msgid "Statusbar custom"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.wizard_form_views
+msgid "Sub2"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.report.xml,name:vechiclemanufacturer.action_supplier
+msgid "Supplier Report"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,car_regstate:0
+#: selection:customer.form.wizard2,car_regstate:0
+#: selection:part.samp,car_regstate:0
+#: selection:window.main,car_regstate:0
+msgid "TAMILNADU"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_product_tax
+msgid "TAX"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_total_cost
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_totcost
+msgid "TOTAL COST"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_total_days
+msgid "TOTAL DAYS"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_total_price
+msgid "TOTAL PRICE"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:carparts.vechicle,light_model:0
+msgid "TailLight"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_tax
+msgid "Tax"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "Tax :"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,help:vechiclemanufacturer.field_login_vechicle_password_login
+#: model:ir.model.fields,help:vechiclemanufacturer.field_login_vechicle_user_name
+msgid "This field has ADMIN authenticity, Provide valid user name and password"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_to_date
+msgid "To date"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.token_management1
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.token_form_views
+msgid "Token management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_total_parts_price
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "Total Amount"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_form_views
+msgid "Total Amounts"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_total_days
+msgid "Total Days"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.report_supplier
+msgid "Total Price:"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Total Product price"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_quantity_total
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_productselection_car_quantity_total
+msgid "Total Quantity"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_vechicle_totparts
+msgid "Total parts"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Total values"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_tyres
+msgid "Tyres"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.login_form_views
+msgid "USER NAME"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_login_vechicle_user_name
+msgid "User name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.ProductioID_menu
+msgid "VMSbaseModule"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "Write review here.."
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_experience
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_experience
+msgid "Years of experience"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_carparts_vechicle
+msgid "carparts.vechicle"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "clear priority"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_leave_company_companyleave_id
+msgid "company leave"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.company_form_views
+msgid "company management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.company_details_search_view
+msgid "company_details"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.company_action_window
+msgid "companymanagement"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_form_views
+msgid "confirm"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.customer_action_window
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "customer"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.customer_parts1
+msgid "customer management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "customer's Address"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_customer_car
+msgid "customer.car"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_customer_form_wizard
+msgid "customer.form.wizard"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_customer_form_wizard2
+msgid "customer.form.wizard2"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_details_search_view
+msgid "customer_details"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.pipeline_Quotation
+msgid "customer_pipelines"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_partsprovider_vechicle_b
+msgid "decode"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_form_views
+msgid "done"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,car_model:0
+#: selection:customer.form.wizard2,car_model:0
+#: selection:part.samp,car_model:0
+#: selection:window.main,car_model:0
+msgid "endeavour"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_follwers_id
+msgid "follwers_id"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,priority:0
+#: selection:customer.form.wizard2,priority:0
+#: selection:part.samp,priority:0
+#: selection:window.main,priority:0
+msgid "high"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,priority:0
+#: selection:customer.form.wizard2,priority:0
+#: selection:part.samp,priority:0
+#: selection:window.main,priority:0
+msgid "highest"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:carparts.vechicle,seater:0
+msgid "leatherCushion"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_leave_company
+msgid "leave.company"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_leave_reason
+msgid "leave.reason"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard2_area
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_customer_form_wizard_locations
+msgid "location"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.login_form_views
+msgid "login"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_login_vechicle
+msgid "login.vechicle"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,priority:0
+#: selection:customer.form.wizard2,priority:0
+#: selection:part.samp,priority:0
+#: selection:window.main,priority:0
+msgid "low"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,priority:0
+#: selection:customer.form.wizard2,priority:0
+#: selection:part.samp,priority:0
+#: selection:window.main,priority:0
+msgid "medium"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selection_selection_name
+msgid "name"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_token_vechicle_seq_numb
+msgid "order"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:carparts.vechicle,seater:0
+msgid "ordinaryCushion"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_part_samp
+msgid "part.samp"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_production_vechicle_parts
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_form_views
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_list
+msgid "parts"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.parts provider_parts1
+msgid "parts provider management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_partsprovider_vechicle
+msgid "partsprovider.vechicle"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.partsprovider_action_window
+msgid "partsprovidermanagement"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_details_calendar_view
+msgid "personal_details"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_prodexport_car
+msgid "prodexport.car"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.product_form_views
+msgid "product management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_production_vechicle
+msgid "production.vechicle"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.product_action_window
+msgid "productmanagement"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_carparts_vechicle_products_availability
+msgid "products availability"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_products_car
+msgid "products.car"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_productselection_car
+msgid "productselection.car"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "provide customer valid email Id"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_selection_selection
+msgid "selection.selection"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_selecttoken_vechicle
+msgid "selecttoken.vechicle"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.service1_form_views
+msgid "service management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_service_car
+msgid "service.car"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_service_vechicle
+msgid "service.vechicle"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_comapany_car_serviceman_name
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_service_car_serviceman_name
+msgid "serviceMan"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.service1_action_window
+msgid "servicemanagement"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_state_base
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_products_car_state_custom
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_state_base
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_supplier_car_state_custom
+msgid "state"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.menu,name:vechiclemanufacturer.supplier_parts1
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_form_views
+msgid "supplier management"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_supplier_car
+msgid "supplier.car"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.supplier_action_window
+msgid "suppliermanagement"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.supplier_details_search_view
+msgid "supplierr_details"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_token_vechicle
+msgid "token.vechicle"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.actions.act_window,name:vechiclemanufacturer.token_action_window
+msgid "tokenmanagement"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.leave_list1
+msgid "total days"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model.fields,field_description:vechiclemanufacturer.field_selection_selection_value
+msgid "value"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.productsshow_form_views
+msgid "vechile production"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,priority:0
+#: selection:customer.form.wizard2,priority:0
+#: selection:part.samp,priority:0
+#: selection:window.main,priority:0
+msgid "very high"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: selection:customer.car,priority:0
+#: selection:customer.form.wizard2,priority:0
+#: selection:part.samp,priority:0
+#: selection:window.main,priority:0
+msgid "very low"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.model,name:vechiclemanufacturer.model_window_main
+msgid "window.main"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "wizard"
+msgstr ""
+
+#. module: vechiclemanufacturer
+#: model:ir.ui.view,arch_db:vechiclemanufacturer.customer_form_views
+msgid "wizard2"
+msgstr ""
+

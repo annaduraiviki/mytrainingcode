@@ -1,0 +1,93 @@
+<odoo>
+	
+	
+	<record model="ir.ui.view" id="productsshow_form_views">
+	<field name="name">productionshow form</field>
+	<field name="model">productselection.car</field>
+	<field name="arch" type="xml">
+		<form string="vechile production">
+			<sheet>
+			<button name="quant" type="object" class="oe_stat_button oe_right" icon="fa-dashboard">
+			<field name="quantity_button" widget="statinfo" />
+			</button>
+			<separator string="Product Details"/>
+				<group colspan="2" col="2">
+				<field name="image" align="center" height="90" width="90" widget="image" nolabel="1" />
+				</group>
+				<group colspan="4" col="2">
+				<field name="product_nameselection" style="width:50%%;height:10%%;font-size:15px"
+									placeholder="Specify Product name"  />
+				<field name="id" />
+				<field name="quantity_total" />
+				</group>
+			</sheet>
+		</form>
+	</field>
+</record>	
+	
+	<record model="ir.ui.view" id="productsShow_list">
+		<field name="name">productionshow list</field>
+		<field name="model">productselection.car</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="id" />
+				<field name="product_nameselection" />
+				<field name="quantity_total" />
+				<field name="image" />
+			</tree>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="My_kanban_prod">
+		<field name="name">Kanban</field>
+		<field name="model">productselection.car</field>
+		<field name="arch" type="xml">
+			<kanban default_order="product_nameselection">
+			   	<field name="product_nameselection" />
+				<field name="quantity_total" />
+				<field name="image"/>
+				<!-- <field name="name"/> <field name="code"/> <field name="lst_price"/> -->
+				<templates>
+					<t t-name="kanban-box">
+						<div class="oe_kanban_vignette oe_semantic_html_override">
+							<table>
+								<tr>
+									<td>
+										<a type="open">
+											<li>
+												Product Name:
+												<strong>
+													<field name="product_nameselection" />
+												</strong>
+											</li>
+											<img height="80" width="90"
+												t-att-src="kanban_image('productselection.car', 'image', record.id.value)"
+												class="oe_kanban_image" />
+												<li>
+													Quantity:
+													<strong>	<field name="quantity_total" style="background-color: #FF8C00;" /></strong>
+												</li>
+										</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+	
+	
+	<record model="ir.actions.act_window" id="productshow_action_window">
+			<field name="name">Productionshow</field>
+			<field name="res_model">productselection.car</field>
+			<field name="view_mode">kanban,tree,form</field>
+			<field name="view_type">form</field>
+			
+	</record>
+	
+			<menuitem name="CONFIGURATION" id="config_prod" parent="ProductioID_menu" />
+		<menuitem name="Products-Config" id="config_prod2" parent="config_prod" action="productshow_action_window" />
+	
+	</odoo>

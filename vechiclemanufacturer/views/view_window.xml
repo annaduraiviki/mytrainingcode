@@ -1,0 +1,108 @@
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="main_window_form">
+			<field name="name">Main window</field>
+			<field name="model">window.main</field>
+			<field name="arch" type="xml">
+				<form string="Main Window">
+					<sheet>
+						<button name="date_window_method" type="object"
+							class=" oe_stat_button oe_right oe_inline" icon="fa-clock-o">
+						<field name="date_window" class="oe_right " widget="float_time" />
+						</button>
+						<!-- <field name="requested_date"/> -->
+						<button name="%(login_action_window)d" type="action" class="oe_right oe_highlight o_wow " icon="fa-university" string="LOGOUT"/>
+						<!-- <button name="%(login_action_window)d" type="action" class="oe_right oe_highlight o_wow " icon="fa-university" string="LOGOUT"/> -->
+						<separator string="VECHICLE MANAGEMENT SYSTEM MAIN WINDOW"
+							align="center" />
+						<group colspan="4" col="4">
+
+							<div>
+								<button name="%(customer_action_window)d" type="action"
+									class="oe_stat_button oe_left  o_wow" icon="fa-user">
+									<p>
+										<strong>Customer Management</strong>
+										<br></br>
+									</p>
+								</button>
+							</div>
+							<div>
+								<button name="%(companyleave_action_window1)d" type="action"
+									class="oe_stat_button oe_left  o_wow" icon="fa-book">
+									<p>
+										<strong>Leave Management</strong>
+										<br></br>
+									</p>
+								</button>
+							</div>
+						</group>
+
+						<separator string="" />
+						<group colspan="4" col="4">
+							<button name="%(company_action_window)d" type="action"
+								class="oe_stat_button oe_left oe_inline o_wow" icon="fa-building-o">
+								<p>
+									<strong>Company Management</strong>
+								</p>
+							</button>
+							<button name="%(service1_action_window)d" type="action"
+								class="oe_stat_button oe_left oe_inline o_wow" icon="fa-tags">
+								<p>
+									<strong>ServiceMen Management</strong>
+								</p>
+							</button>
+						</group>
+						<separator string="" />
+						<group colspan="4" col="4">
+							<button name="%(supplier_action_window)d" type="action"
+								class="oe_stat_button oe_left oe_inline o_wow" icon="fa-truck">
+								<p>
+									<strong>Supplier Management</strong>
+								</p>
+							</button>
+							<button name="%(partsprovider_action_window)d" type="action"
+								class="oe_stat_button oe_left oe_inline o_wow" icon="fa-compass">
+								<p>
+									<strong>Parts Provider Management</strong>
+								</p>
+							</button>
+						</group>
+						<group>
+						
+						<separator string="Customer's and Servicemen's count"> </separator>
+							<br></br>
+								<button name="cust_count" type="object"
+									class="oe_highlight oe_stat_button" style="background-color:red"
+									icon="fa-user">
+									<field name="customer_count" widget="statinfo" />
+								</button>
+								<button name="servmen_count" type="object"
+									class="oe_highlight oe_stat_button" style="background-color:red"
+									icon="fa-users">
+									<field name="servicemen_count" widget="statinfo" />
+
+								</button>
+								<button name="regular_customer_count" type="object" class="oe_highlight oe_stat_button" icon="fa-users"  >
+								<field name="regular_customer" widget="statinfo" />
+								</button>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="Main_window_action_window">
+			<field name="name">Mainwindowmanagement</field>
+			<field name="res_model">window.main</field>
+			<field name="view_mode">form</field>
+			<field name="view_type">form</field>
+			<field name="usage">menu</field>
+		</record>
+
+		<menuitem name="MAIN WINDOW" id="main_window" parent="ProductioID_menu"
+			sequence="1" />
+		<menuitem name="Main Window" id="main_window1" parent="main_window"
+			action="Main_window_action_window" />
+	</data>
+</openerp>
